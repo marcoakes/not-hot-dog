@@ -1,0 +1,38 @@
+name: Generate Screenshots
+
+on:
+  workflow_dispatch: {}
+
+jobs:
+  build-screenshots:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        working-directory: screenshots
+        run: npm ci
+
+      - name: Generate screenshots
+        working-directory: screenshots
+        run: node capture.js
+
+      - name: Commit changes (if any)
+        run: |
+          if [[ -n "$(git status --porcelain screenshots/png)" ]]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add screenshots/png
+            git commit -m "chore(screenshots): regenerate"
+            git push
+          else
+            echo "No screenshot changes to commit."
+          fi

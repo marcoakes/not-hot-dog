@@ -24,7 +24,7 @@ async function captureScreenshots() {
         { file: '02-hotdog-result.html', output: '02-hotdog-result.png' },
         { file: '03-not-hotdog-result.html', output: '03-not-hotdog-result.png' },
         { file: '04-party-game.html', output: '04-party-game.png' },
-        { file: '05-showcase.html', output: '05-silicon-valley.png' },
+        { file: '05-showcase.html', output: '05-showcase.png' },
         { file: '06-features.html', output: '06-features.png' }
     ];
 
