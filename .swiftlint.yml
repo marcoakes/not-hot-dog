@@ -1,0 +1,18 @@
+disabled_rules:
+  - line_length
+  - function_body_length
+  - type_body_length
+  - identifier_name
+
+opt_in_rules:
+  - empty_count
+  - redundant_nil_coalescing
+  - unused_declaration
+  - unused_import
+
+included:
+  - SeeFood
+  - SeeFoodTests
+  - SeeFoodUITests
+
+reporter: xcode

@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshot 5 - Silicon Valley</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 1290px;
+            height: 2796px;
+            background: linear-gradient(180deg, #0f0c29 0%, #302b63 50%, #24243e 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+            overflow: hidden;
+        }
+        .tv-badge {
+            background: rgba(255,255,255,0.1);
+            padding: 15px 40px;
+            border-radius: 50px;
+            margin-bottom: 40px;
+            backdrop-filter: blur(10px);
+        }
+        .tv-badge span {
+            color: rgba(255,255,255,0.8);
+            font-size: 28px;
+            font-weight: 500;
+        }
+        .caption {
+            color: white;
+            font-size: 72px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 25px;
+            text-shadow: 0 4px 20px rgba(0,0,0,0.3);
+        }
+        .quote-box {
+            background: rgba(255,255,255,0.08);
+            padding: 35px 50px;
+            border-radius: 25px;
+            margin-bottom: 60px;
+            max-width: 900px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .quote {
+            color: rgba(255,255,255,0.9);
+            font-size: 38px;
+            font-style: italic;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .quote-author {
+            color: #ffd700;
+            font-size: 26px;
+            text-align: center;
+            margin-top: 20px;
+            font-style: normal;
+        }
+        .device {
+            width: 400px;
+            height: 820px;
+            background: #000;
+            border-radius: 52px;
+            padding: 12px;
+            box-shadow: 0 50px 100px rgba(0,0,0,0.5);
+            margin-bottom: 60px;
+        }
+        .screen {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+            border-radius: 42px;
+            overflow: hidden;
+            position: relative;
+        }
+        .notch {
+            width: 150px;
+            height: 32px;
+            background: #000;
+            border-radius: 0 0 18px 18px;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 10;
+        }
+        .app-content {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 50px;
+        }
+        .header {
+            padding: 15px 25px;
+            display: flex;
+            justify-content: center;
+        }
+        .app-title {
+            color: white;
+            font-size: 34px;
+            font-weight: 900;
+            letter-spacing: 2px;
+        }
+        .camera-area {
+            flex: 1;
+            margin: 15px;
+            background: linear-gradient(135deg, #2d3436, #636e72);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+        }
+        .big-hotdog {
+            font-size: 180px;
+        }
+        .focus-box {
+            position: absolute;
+            width: 160px;
+            height: 160px;
+            border: 3px solid rgba(255,255,255,0.5);
+            border-radius: 15px;
+        }
+        .capture-area {
+            padding: 35px;
+            display: flex;
+            justify-content: center;
+        }
+        .capture-btn {
+            width: 80px;
+            height: 80px;
+            background: white;
+            border-radius: 50%;
+            border: 5px solid rgba(255,255,255,0.3);
+        }
+        .features-row {
+            display: flex;
+            gap: 40px;
+            justify-content: center;
+        }
+        .feature-item {
+            text-align: center;
+        }
+        .feature-icon {
+            font-size: 56px;
+            margin-bottom: 15px;
+        }
+        .feature-text {
+            color: rgba(255,255,255,0.8);
+            font-size: 24px;
+            font-weight: 500;
+        }
+    </style>
+</head>
+<body>
+    <div class="tv-badge">
+        <span>🎬 Inspired by HBO's Silicon Valley</span>
+    </div>
+
+    <div class="caption">As Seen on TV</div>
+
+    <div class="quote-box">
+        <p class="quote">"It's an app where you take a picture of food,<br>and it tells you what it is."</p>
+        <p class="quote-author">— Jian-Yang, Season 4</p>
+    </div>
+
+    <div class="device">
+        <div class="screen">
+            <div class="notch"></div>
+            <div class="app-content">
+                <div class="header">
+                    <span class="app-title">SEEFOOD</span>
+                </div>
+                <div class="camera-area">
+                    <span class="big-hotdog">🌭</span>
+                    <div class="focus-box"></div>
+                </div>
+                <div class="capture-area">
+                    <div class="capture-btn"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="features-row">
+        <div class="feature-item">
+            <div class="feature-icon">🧠</div>
+            <div class="feature-text">Real AI</div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-text">100% Private</div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">📴</div>
+            <div class="feature-text">Works Offline</div>
+        </div>
+        <div class="feature-item">
+            <div class="feature-icon">🎉</div>
+            <div class="feature-text">Party Ready</div>
+        </div>
+    </div>
+</body>
+</html>

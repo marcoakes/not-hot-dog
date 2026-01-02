@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screenshot 6 - Features</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            width: 1290px;
+            height: 2796px;
+            background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding-top: 150px;
+            font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif;
+            overflow: hidden;
+        }
+        .logo {
+            font-size: 140px;
+            margin-bottom: 30px;
+        }
+        .app-name {
+            color: white;
+            font-size: 84px;
+            font-weight: 900;
+            margin-bottom: 15px;
+            letter-spacing: 3px;
+        }
+        .tagline {
+            color: rgba(255,255,255,0.7);
+            font-size: 36px;
+            margin-bottom: 100px;
+        }
+        .features-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            padding: 0 100px;
+            width: 100%;
+        }
+        .feature-card {
+            background: rgba(255,255,255,0.05);
+            border-radius: 30px;
+            padding: 50px 40px;
+            border: 1px solid rgba(255,255,255,0.1);
+            backdrop-filter: blur(10px);
+        }
+        .feature-icon {
+            font-size: 72px;
+            margin-bottom: 25px;
+        }
+        .feature-title {
+            color: white;
+            font-size: 36px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        .feature-desc {
+            color: rgba(255,255,255,0.6);
+            font-size: 26px;
+            line-height: 1.5;
+        }
+        .results-preview {
+            display: flex;
+            gap: 30px;
+            margin-top: 80px;
+        }
+        .result-badge {
+            padding: 25px 50px;
+            border-radius: 20px;
+            font-size: 38px;
+            font-weight: 900;
+            color: white;
+        }
+        .result-badge.green {
+            background: linear-gradient(135deg, #4CAF50, #8BC34A);
+            box-shadow: 0 10px 40px rgba(76, 175, 80, 0.4);
+        }
+        .result-badge.red {
+            background: linear-gradient(135deg, #f44336, #e91e63);
+            box-shadow: 0 10px 40px rgba(244, 67, 54, 0.4);
+        }
+        .bottom-tagline {
+            margin-top: 80px;
+            color: rgba(255,255,255,0.5);
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">🌭</div>
+    <div class="app-name">SEEFOOD</div>
+    <div class="tagline">Hot Dog / Not Hot Dog</div>
+
+    <div class="features-grid">
+        <div class="feature-card">
+            <div class="feature-icon">📸</div>
+            <div class="feature-title">Instant Detection</div>
+            <div class="feature-desc">Point, tap, and get your answer in milliseconds</div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🧠</div>
+            <div class="feature-title">Real AI</div>
+            <div class="feature-desc">Powered by Apple's Vision framework</div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔒</div>
+            <div class="feature-title">100% Private</div>
+            <div class="feature-desc">All processing happens on your device</div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">📴</div>
+            <div class="feature-title">Works Offline</div>
+            <div class="feature-desc">No internet connection required</div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🔊</div>
+            <div class="feature-title">Voice Announcements</div>
+            <div class="feature-desc">Hear the results loud and clear</div>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">🎉</div>
+            <div class="feature-title">Party Mode</div>
+            <div class="feature-desc">Perfect for social gatherings</div>
+        </div>
+    </div>
+
+    <div class="results-preview">
+        <div class="result-badge green">✓ HOT DOG</div>
+        <div class="result-badge red">✗ NOT HOT DOG</div>
+    </div>
+
+    <div class="bottom-tagline">The only two answers you'll ever need</div>
+</body>
+</html>

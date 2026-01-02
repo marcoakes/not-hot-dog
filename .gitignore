@@ -1,0 +1,25 @@
+# Xcode
+build/
+DerivedData/
+*.xcuserstate
+*.xcuserdatad
+*.xcworkspace/xcuserdata/
+.DS_Store
+
+# Swift Package Manager
+.build/
+Package.resolved
+
+# CocoaPods
+Pods/
+
+# Carthage
+Carthage/Build/
+
+# IDE
+*.swp
+*~
+.idea/
+
+# Python venv
+venv/

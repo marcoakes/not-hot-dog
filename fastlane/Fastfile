@@ -1,0 +1,51 @@
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    UI.message("Not Hot Dog Fastlane starting…")
+  end
+
+  desc "Run unit tests on simulator"
+  lane :tests do
+    scan(
+      project: "NotHotDog.xcodeproj",
+      scheme: "NotHotDog",
+      devices: ["iPhone 15"],
+      only_testing: ["NotHotDogTests"],
+      clean: true
+    )
+  end
+
+  desc "Build for TestFlight"
+  lane :build do
+    gym(
+      project: "NotHotDog.xcodeproj",
+      scheme: "NotHotDog",
+      configuration: "Release",
+      clean: true,
+      export_method: "app-store"
+    )
+  end
+
+  desc "Upload to TestFlight"
+  lane :beta do
+    # Authenticate using App Store Connect API key from JSON in env var
+    if ENV.key?("APP_STORE_CONNECT_API_KEY_JSON")
+      json = JSON.parse(ENV["APP_STORE_CONNECT_API_KEY_JSON"]) rescue nil
+      if json
+        app_store_connect_api_key(
+          key_id: json["key_id"],
+          issuer_id: json["issuer_id"],
+          key: json["key"], # contents of the .p8 key
+          is_key_content_base64: false
+        )
+      end
+    end
+
+    build
+    pilot(
+      distribute_external: false,
+      skip_waiting_for_build_processing: false
+    )
+  end
+end

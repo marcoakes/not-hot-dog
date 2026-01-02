@@ -1,0 +1,6 @@
+app_identifier("com.nothotdog.app")
+# Optional: set your Apple ID if you want Fastlane to use it for non-API-key auth
+# apple_id("your-apple-id@example.com")
+
+itc_team_id("")
+team_id("")

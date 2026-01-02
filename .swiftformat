@@ -1,0 +1,11 @@
+--swiftversion 6.0
+--indent 4
+--stripunusedargs closure-only
+--self remove
+--ifdef no-indent
+--patternlet inline
+--wraparguments before-first
+--wrapcollections before-first
+
+// Exclude asset catalogs and docs
+--exclude SeeFood/Assets.xcassets,docs
