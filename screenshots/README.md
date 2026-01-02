@@ -39,7 +39,7 @@ async function captureScreenshots() {
         '02-hotdog-result.html',
         '03-not-hotdog-result.html',
         '04-party-game.html',
-        '05-silicon-valley.html',
+        '05-showcase.html',
         '06-features.html'
     ];
 

@@ -2,7 +2,7 @@
 //  Not Hot DogApp.swift
 //  Not Hot Dog
 //
-//  Hot Dog / Not Hot Dog - Silicon Valley Style
+//  Hot Dog / Not Hot Dog
 //
 
 import SwiftUI

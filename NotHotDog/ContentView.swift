@@ -2,7 +2,7 @@
 //  ContentView.swift
 //  Not Hot Dog
 //
-//  The main UI - Silicon Valley "Not Hot Dog" style
+//  The main UI - Not Hot Dog style
 //
 
 import SwiftUI

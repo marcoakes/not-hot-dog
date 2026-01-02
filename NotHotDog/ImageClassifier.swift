@@ -3,7 +3,7 @@
 //  Not Hot Dog
 //
 //  Vision framework classifier - Hot Dog or Not Hot Dog
-//  Binary classification logic as seen in Silicon Valley
+//  Binary classification logic
 //
 
 import Vision
