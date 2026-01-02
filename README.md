@@ -1,7 +1,7 @@
 # Not Hot Dog
 
 ![iOS CI](https://github.com/marcoakes/not-hot-dog/actions/workflows/ios-ci.yml/badge.svg?branch=main)
-[![Release](https://img.shields.io/github/v/release/marcoakes/Not Hot Dog?display_name=tag&sort=semver)](https://github.com/marcoakes/not-hot-dog/releases)
+[![Release](https://img.shields.io/github/v/release/marcoakes/not-hot-dog?display_name=tag&sort=semver)](https://github.com/marcoakes/not-hot-dog/releases)
 
 An iOS app that uses Apple's Vision framework to classify images as either **Hot Dog** or **Not Hot Dog**. Nothing else.
 
