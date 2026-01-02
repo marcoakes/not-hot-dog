@@ -62,7 +62,7 @@ An intentionally minimal camera app that answers one question: is it a hot dog? 
 ---
 
 "This is the actual app. It only does hot dogs."
-— Jian-Yang (probably)
+— Probably
 
 Download now and join thousands in answering life's most important question: Is it a hot dog?
 
