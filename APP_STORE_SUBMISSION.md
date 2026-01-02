@@ -64,7 +64,7 @@ An intentionally minimal camera app that answers one question: is it a hot dog? 
 "This is the actual app. It only does hot dogs."
 — Jian-Yang (probably)
 
-Download now and join thousands of Silicon Valley fans in answering life's most important question: Is it a hot dog?
+Download now and join thousands in answering life's most important question: Is it a hot dog?
 
 🌭 HOT DOG or NOT HOT DOG — You decide! 🌭
 ```
@@ -98,7 +98,7 @@ Demo: Simply point the camera at any object and tap capture. The app will displa
 ## What's New (For Updates)
 ```
 🌭 The hot dog detector you've been waiting for!
-• Faithful recreation of the Silicon Valley app
+• Simple, focused, and fast
 • Works on the latest iOS
 • Now with voice announcements!
 ```
